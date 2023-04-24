@@ -15,39 +15,50 @@
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
+            text-align: center;
         }
 
         h1 {
-            font-size: 36px;
-            text-align: center;
+            font-size: 48px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
         }
 
         p {
-            font-size: 18px;
-            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
         }
 
         .game-screenshot {
             max-width: 100%;
             height: auto;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
         }
 
         .cta-button {
-            display: block;
-            width: 200px;
-            margin: 0 auto;
-            padding: 10px;
+            display: inline-block;
+            padding: 15px 30px;
             text-align: center;
             background-color: #ff0000;
             color: #fff;
             font-size: 24px;
             text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 2px;
             transition: background-color 0.3s ease;
+            border-radius: 5px;
         }
 
         .cta-button:hover {
             background-color: #ff6666;
+        }
+
+        .game-embed {
+            max-width: 100%;
+            height: 500px;
+            margin-bottom: 30px;
         }
     </style>
 </head>
@@ -57,7 +68,11 @@
         <p>Raiden is a popular classic scrolling shooter arcade game series known for its fast-paced gameplay and intense action.</p>
         <img src="raiden_screenshot.jpg" alt="Raiden Game Screenshot" class="game-screenshot">
         <p>Join the battle against hordes of enemy ships and bosses to save the world from various threats!</p>
-        <a href="play_raiden.html" class="cta-button">Play Now</a>
+        <div class="game-embed">
+            <iframe src="https://playclassic.games/games/scrolling-shooter-dos-games-online/play-raiden-online/play/" frameborder="0"></iframe>
+        </div>
+        <p>Use the arrow keys to move and the spacebar to shoot. Good luck!</p>
+        <a href="download_raiden.html" class="cta-button">Download Game</a>
     </div>
 </body>
 </html>
